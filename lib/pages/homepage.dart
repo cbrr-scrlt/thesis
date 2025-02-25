@@ -21,7 +21,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Home Page")),
+      appBar: AppBar(
+        title: Text("Home Page"),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -57,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 ),
-                onPressed: () => _onButtonPressed("Up"),
+                onPressed: () => _onButtonPressed("left"),
                 child: Icon(Icons.arrow_back, color: Colors.white),
               ),
               SizedBox(width: 10),
@@ -69,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 ),
-                onPressed: () => _onButtonPressed("Up"),
+                onPressed: () => _onButtonPressed("right"),
                 child: Icon(Icons.arrow_forward, color: Colors.white),
               ),
             ],
@@ -85,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 ),
-                onPressed: () => _onButtonPressed("Up"),
+                onPressed: () => _onButtonPressed("down"),
                 child: Icon(Icons.arrow_downward, color: Colors.white),
               ),
             ],
