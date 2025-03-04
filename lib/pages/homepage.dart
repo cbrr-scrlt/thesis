@@ -37,11 +37,11 @@ class _HomePageState extends State<HomePage> {
             children: [
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent, // Button color
+                  backgroundColor: Colors.green[300], // Button color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
                 onPressed: () => _onButtonPressed("Up"),
                 child: Icon(Icons.arrow_upward, color: Colors.white),
@@ -53,23 +53,23 @@ class _HomePageState extends State<HomePage> {
             children: [
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent, // Button color
+                  backgroundColor: Colors.green[300], // Button color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
                 onPressed: () => _onButtonPressed("left"),
                 child: Icon(Icons.arrow_back, color: Colors.white),
               ),
-              SizedBox(width: 10),
+              SizedBox(width: 70),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent, // Button color
+                  backgroundColor: Colors.green[300], // Button color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
                 onPressed: () => _onButtonPressed("right"),
                 child: Icon(Icons.arrow_forward, color: Colors.white),
@@ -81,30 +81,30 @@ class _HomePageState extends State<HomePage> {
             children: [
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent, // Button color
+                  backgroundColor: Colors.green[300], // Button color
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                 ),
                 onPressed: () => _onButtonPressed("down"),
                 child: Icon(Icons.arrow_downward, color: Colors.white),
               ),
             ],
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 30),
           Text(
             "Status: $_status",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 30),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(
                 onPressed: () => _updateStatus("Started"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink,
+                  backgroundColor: Colors.green[300],
                   foregroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   shape: RoundedRectangleBorder(
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
               ElevatedButton(
                 onPressed: () => _updateStatus("Stopped"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink,
+                  backgroundColor: Colors.green[300],
                   foregroundColor: Colors.white,
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                   shape: RoundedRectangleBorder(

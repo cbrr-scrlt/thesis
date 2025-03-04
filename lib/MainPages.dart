@@ -37,11 +37,13 @@ class _MainPagesState extends State<MainPages> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
-            'Robotic Arm App',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
-          backgroundColor: Colors.pinkAccent, // Custom color
+          title: Center(
+        child: Text(
+        'Robotic Arm App',
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+      ),
+          backgroundColor: Colors.green[300], // Custom color
           elevation: 5,
           actions: [
             IconButton(
@@ -49,32 +51,32 @@ class _MainPagesState extends State<MainPages> {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => LoginPage()));
                 },
-                icon: const Icon(Icons.logout_rounded))
+                icon: const Icon(Icons.logout_rounded, color: Colors.white,))
           ], // Shadow effect
         ),
         body: _pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
-          selectedItemColor: Colors.black, // Change selected item color
+          selectedItemColor: Colors.green, // Change selected item color
           unselectedItemColor: Colors.white, // Change unselected item color
-          backgroundColor: Colors.pink, // Background color
+          backgroundColor: Colors.green[300], // Background color
           type: BottomNavigationBarType.fixed, // Keeps labels visible
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home, size: 28),
+              icon: Icon(Icons.home, size:30),
               label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.delete, size: 28),
+              icon: Icon(Icons.delete, size: 30),
               label: "Waste Bin",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.dehaze, size: 28),
+              icon: Icon(Icons.dehaze, size: 30),
               label: "Status",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.dehaze, size: 28),
+              icon: Icon(Icons.aod, size: 30),
               label: "Testing",
             ),
           ],

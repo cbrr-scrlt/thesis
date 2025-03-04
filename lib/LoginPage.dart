@@ -35,9 +35,9 @@ class _LoginPageState extends State<LoginPage> {
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-            Colors.cyan,
-            Colors.cyan,
-            Colors.cyan,
+            Colors.green,
+            Colors.green,
+            Colors.green,
           ]),
         ),
         child: Column(
@@ -168,7 +168,7 @@ class _LoginPageState extends State<LoginPage> {
         height: 50,
         margin: EdgeInsets.symmetric(horizontal: 50),
         decoration: BoxDecoration(
-          color: Colors.cyan[500],
+          color: Colors.green[5grp00],
           borderRadius: BorderRadius.circular(10),
         ),
         child: Center(

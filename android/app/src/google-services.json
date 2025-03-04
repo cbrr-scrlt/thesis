@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "946953244366",
+    "project_id": "robotic-arm-6421c",
+    "storage_bucket": "robotic-arm-6421c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946953244366:android:abde8a596d0a4e6efe8a9f",
+        "android_client_info": {
+          "package_name": "com.example.thesiiiis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg_v8iZ-Ew8jLMnmL7S0ysidz1o428218"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
